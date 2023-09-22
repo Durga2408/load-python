@@ -1,0 +1,30 @@
+import os
+import pickle
+os.chdir("d:\\loadpython")
+list1=open("d:\\loadpython\\binary.data","ab+")
+binaryset={"one","two"}
+binarylist=["vijay","raju","kamal","suresh"]
+binarydata={1:"durga",'office':"Ekip It"}
+
+# pickle.dump(binaryset,list1)
+# list1.seek(0,0)
+# output=pickle.load(list1)
+# print("output :",output)
+# print("The position is :",list1.tell())
+
+# pickle.dump(binarylist,list1)
+# list1.seek(28,0)
+# output=pickle.load(list1)
+# print("output :",output)
+# print("The position is :",list1.tell())
+
+# pickle.dump(binarydata,list1)
+# list1.seek(76,0)
+# output=pickle.load(list1)
+# print("output :",output)
+# print("The position is :",list1.tell())
+#next position is 121 :
+
+list1.seek(76,0)
+output=pickle.load(list1)
+print("output :",output)
